@@ -6,16 +6,20 @@
 <title>MUSIC / i 3iss u</title>
 
 <style>
+:root {
+    --accent: #ff4040;
+}
+
 body {
     background: #000;
-    color: #fff;
+    color: var(--accent);
     font-family: monospace;
     margin: 0;
     padding: 30px;
 }
 
 a {
-    color: #fff;
+    color: var(--accent);
     text-decoration: underline;
 }
 
@@ -30,23 +34,28 @@ a {
 }
 
 .sub {
-    color: #aaa;
+    color: var(--accent);
     margin-bottom: 25px;
 }
 
 h1 {
-    border-bottom: 1px solid #fff;
+    color: var(--accent);
+    border-bottom: 1px solid var(--accent);
     padding-bottom: 8px;
 }
 
+h2, h3, p, span, footer {
+    color: var(--accent);
+}
+
 .box {
-    border: 1px solid #555;
+    border: 1px solid var(--accent);
     padding: 15px;
     margin: 20px 0;
 }
 
 .work {
-    border-bottom: 1px dotted #777;
+    border-bottom: 1px dotted var(--accent);
     padding: 15px 0;
 }
 
@@ -55,14 +64,24 @@ h1 {
 }
 
 .small {
-    color: #aaa;
+    color: var(--accent);
     font-size: 12px;
 }
 
 footer {
     margin-top: 50px;
-    border-top: 1px solid #333;
+    border-top: 1px solid var(--accent);
     padding-top: 15px;
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 20px;
+    }
+
+    .logo {
+        font-size: 32px;
+    }
 }
 </style>
 </head>
@@ -93,11 +112,11 @@ MUSIC
 </div>
 
 <div class="box">
-  <h2>ALBUM</h2> 
- <p>2026</p>
-  <a href="album-over-a-decade.html">
-    <h3>over a decade</h3>
-  </a>
+    <h2>ALBUM</h2>
+    <p>2026</p>
+    <a href="album-over-a-decade.html">
+        <h3>over a decade</h3>
+    </a>
 </div>
 
 <div class="box">
@@ -105,22 +124,21 @@ MUSIC
 <h2>SONGS</h2>
 
 <div class="work">
-  <a href="songs-2025.html">2025</a>
-  <br>
-  <span class="small">11 songs</span>
+    <a href="songs-2025.html">2025</a>
+    <br>
+    <span class="small">11 songs</span>
 </div>
 
 <div class="work">
-  <a href="songs-2026.html">2026</a>
-  <br>
-  <span class="small">67 songs</span>
+    <a href="songs-2026.html">2026</a>
+    <br>
+    <span class="small">67 songs</span>
 </div>
 
 <br>
 <span class="small">2026</span>
 <br>
 <span class="small">© 2025–2026 黙花. All Rights Reserved.無断転載・複製・改変・商用利用を禁止します。</span>
-
 
 </div>
 
