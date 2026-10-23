@@ -15,23 +15,84 @@ body {
   padding: 30px 20px;
   line-height: 1.7;
 }
+
 a { color: #fff; }
+
 h1 { font-size: 2em; }
+
 .box {
   border: 1px solid #fff;
   padding: 20px;
   margin: 20px 0;
 }
+
 .video {
-  padding: 18px 0;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 0;
   border-bottom: 1px dotted #777;
 }
-.small { color: #aaa; }
 
 .video-number {
   color: #42d66b;
   font-weight: bold;
-  margin-right: 12px;
+  min-width: 24px;
+}
+
+.thumbnail {
+  display: block;
+  width: 120px;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  flex-shrink: 0;
+  border: 1px solid #555;
+}
+
+.video-info {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.video-title {
+  text-decoration: none;
+}
+
+.video-title:hover {
+  color: #42d66b;
+}
+
+.small {
+  color: #aaa;
+  font-size: 0.85em;
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 20px 12px;
+  }
+
+  .box {
+    padding: 12px;
+  }
+
+  .video {
+    gap: 8px;
+  }
+
+  .video-number {
+    min-width: 20px;
+    margin-right: 0;
+  }
+
+  .thumbnail {
+    width: 95px;
+  }
+
+  .video-info {
+    font-size: 0.9em;
+  }
 }
 </style>
 </head>
@@ -47,218 +108,392 @@ h1 { font-size: 2em; }
 
 <h1>2026</h1>
 
-
 <div class="box">
 <h2>VIDEOS</h2>
 
 <div class="video">
   <span class="video-number">04</span>
-  <a href="https://youtu.be/dlbWsK5_W-Q">≠200718</a>
-  <div class="small">1月4日</div>
+  <a href="https://youtu.be/dlbWsK5_W-Q" target="_blank" rel="noopener">
+    <img class="thumbnail" src="https://img.youtube.com/vi/dlbWsK5_W-Q/mqdefault.jpg" alt="≠200718 のサムネイル" loading="lazy">
+  </a>
+  <div class="video-info">
+    <a class="video-title" href="https://youtu.be/dlbWsK5_W-Q" target="_blank" rel="noopener">≠200718</a>
+    <div class="small">1月4日</div>
+  </div>
 </div>
 
 <div class="video">
   <span class="video-number">05</span>
-  <a href="https://youtu.be/As90ded83ao">終日の出2025</a>
-  <div class="small">2月3日</div>
+  <a href="https://youtu.be/As90ded83ao" target="_blank" rel="noopener">
+    <img class="thumbnail" src="https://img.youtube.com/vi/As90ded83ao/mqdefault.jpg" alt="終日の出2025 のサムネイル" loading="lazy">
+  </a>
+  <div class="video-info">
+    <a class="video-title" href="https://youtu.be/As90ded83ao" target="_blank" rel="noopener">終日の出2025</a>
+    <div class="small">2月3日</div>
+  </div>
 </div>
 
 <div class="video">
   <span class="video-number">06</span>
-  <a href="https://youtu.be/5-JyQ3_LOWY">ソフトクリームを掃除するだけ</a>
-  <div class="small">3月9日</div>
+  <a href="https://youtu.be/5-JyQ3_LOWY" target="_blank" rel="noopener">
+    <img class="thumbnail" src="https://img.youtube.com/vi/5-JyQ3_LOWY/mqdefault.jpg" alt="ソフトクリームを掃除するだけ のサムネイル" loading="lazy">
+  </a>
+  <div class="video-info">
+    <a class="video-title" href="https://youtu.be/5-JyQ3_LOWY" target="_blank" rel="noopener">ソフトクリームを掃除するだけ</a>
+    <div class="small">3月9日</div>
+  </div>
 </div>
 
 <div class="video">
   <span class="video-number">07</span>
-  <a href="https://youtu.be/Ymi1E-tWcGg">乾くのを待つ集</a>
-  <div class="small">3月19日</div>
+  <a href="https://youtu.be/Ymi1E-tWcGg" target="_blank" rel="noopener">
+    <img class="thumbnail" src="https://img.youtube.com/vi/Ymi1E-tWcGg/mqdefault.jpg" alt="乾くのを待つ集 のサムネイル" loading="lazy">
+  </a>
+  <div class="video-info">
+    <a class="video-title" href="https://youtu.be/Ymi1E-tWcGg" target="_blank" rel="noopener">乾くのを待つ集</a>
+    <div class="small">3月19日</div>
+  </div>
 </div>
 
 <div class="video">
   <span class="video-number">08</span>
-  <a href="https://youtu.be/lI6htX-kV_Q">化粧水はカラダの芯から。頼みますよ</a>
-  <div class="small">3月31日</div>
+  <a href="https://youtu.be/lI6htX-kV_Q" target="_blank" rel="noopener">
+    <img class="thumbnail" src="https://img.youtube.com/vi/lI6htX-kV_Q/mqdefault.jpg" alt="化粧水はカラダの芯から。頼みますよ のサムネイル" loading="lazy">
+  </a>
+  <div class="video-info">
+    <a class="video-title" href="https://youtu.be/lI6htX-kV_Q" target="_blank" rel="noopener">化粧水はカラダの芯から。頼みますよ</a>
+    <div class="small">3月31日</div>
+  </div>
 </div>
 
 <div class="video">
   <span class="video-number">09</span>
-  <a href="https://youtu.be/yCEAlwQT6Vc">今日はエイプリルフールなんかじゃねーよ</a>
-  <div class="small">4月1日</div>
+  <a href="https://youtu.be/yCEAlwQT6Vc" target="_blank" rel="noopener">
+    <img class="thumbnail" src="https://img.youtube.com/vi/yCEAlwQT6Vc/mqdefault.jpg" alt="今日はエイプリルフールなんかじゃねーよ のサムネイル" loading="lazy">
+  </a>
+  <div class="video-info">
+    <a class="video-title" href="https://youtu.be/yCEAlwQT6Vc" target="_blank" rel="noopener">今日はエイプリルフールなんかじゃねーよ</a>
+    <div class="small">4月1日</div>
+  </div>
 </div>
 
 <div class="video">
   <span class="video-number">10</span>
-  <a href="https://youtu.be/UL3S5tdnPXc">四葉のクローバーで幸せになりたかっただけなのに...</a>
-  <div class="small">4月29日</div>
+  <a href="https://youtu.be/UL3S5tdnPXc" target="_blank" rel="noopener">
+    <img class="thumbnail" src="https://img.youtube.com/vi/UL3S5tdnPXc/mqdefault.jpg" alt="四葉のクローバーで幸せになりたかっただけなのに... のサムネイル" loading="lazy">
+  </a>
+  <div class="video-info">
+    <a class="video-title" href="https://youtu.be/UL3S5tdnPXc" target="_blank" rel="noopener">四葉のクローバーで幸せになりたかっただけなのに...</a>
+    <div class="small">4月29日</div>
+  </div>
 </div>
 
 <div class="video">
   <span class="video-number">11</span>
-  <a href="https://youtu.be/AlMjOF3-WDg">とけない不思議なアイス！？</a>
-  <div class="small">5月9日</div>
+  <a href="https://youtu.be/AlMjOF3-WDg" target="_blank" rel="noopener">
+    <img class="thumbnail" src="https://img.youtube.com/vi/AlMjOF3-WDg/mqdefault.jpg" alt="とけない不思議なアイス！？ のサムネイル" loading="lazy">
+  </a>
+  <div class="video-info">
+    <a class="video-title" href="https://youtu.be/AlMjOF3-WDg" target="_blank" rel="noopener">とけない不思議なアイス！？</a>
+    <div class="small">5月9日</div>
+  </div>
 </div>
 
 <div class="video">
   <span class="video-number">12</span>
-  <a href="https://youtu.be/x9JwrpoP75k">【ぜんぶ雪のせいだ。】0円かき氷</a>
-  <div class="small">5月15日</div>
+  <a href="https://youtu.be/x9JwrpoP75k" target="_blank" rel="noopener">
+    <img class="thumbnail" src="https://img.youtube.com/vi/x9JwrpoP75k/mqdefault.jpg" alt="0円かき氷 のサムネイル" loading="lazy">
+  </a>
+  <div class="video-info">
+    <a class="video-title" href="https://youtu.be/x9JwrpoP75k" target="_blank" rel="noopener">【ぜんぶ雪のせいだ。】0円かき氷</a>
+    <div class="small">5月15日</div>
+  </div>
 </div>
 
 <div class="video">
   <span class="video-number">13</span>
-  <a href="https://youtu.be/675Mtz-osBI">第一回ようかんチャレンジ</a>
-  <div class="small">5月19日</div>
+  <a href="https://youtu.be/675Mtz-osBI" target="_blank" rel="noopener">
+    <img class="thumbnail" src="https://img.youtube.com/vi/675Mtz-osBI/mqdefault.jpg" alt="第一回ようかんチャレンジ のサムネイル" loading="lazy">
+  </a>
+  <div class="video-info">
+    <a class="video-title" href="https://youtu.be/675Mtz-osBI" target="_blank" rel="noopener">第一回ようかんチャレンジ</a>
+    <div class="small">5月19日</div>
+  </div>
 </div>
 
 <div class="video">
   <span class="video-number">14</span>
-  <a href="https://youtu.be/qtt_TauOODc">【祝登録者四人】ギリギリエチエチドキドキワクワク質問コーナー</a>
-  <div class="small">5月25日</div>
+  <a href="https://youtu.be/qtt_TauOODc" target="_blank" rel="noopener">
+    <img class="thumbnail" src="https://img.youtube.com/vi/qtt_TauOODc/mqdefault.jpg" alt="質問コーナー のサムネイル" loading="lazy">
+  </a>
+  <div class="video-info">
+    <a class="video-title" href="https://youtu.be/qtt_TauOODc" target="_blank" rel="noopener">【祝登録者四人】ギリギリエチエチドキドキワクワク質問コーナー</a>
+    <div class="small">5月25日</div>
+  </div>
 </div>
 
 <div class="video">
   <span class="video-number">15</span>
-  <a href="https://youtu.be/jAcyuydmQ2A">【元JK】 床に落ちているものだけでメイクする</a>
-  <div class="small">5月27日</div>
+  <a href="https://youtu.be/jAcyuydmQ2A" target="_blank" rel="noopener">
+    <img class="thumbnail" src="https://img.youtube.com/vi/jAcyuydmQ2A/mqdefault.jpg" alt="床に落ちているものだけでメイクする のサムネイル" loading="lazy">
+  </a>
+  <div class="video-info">
+    <a class="video-title" href="https://youtu.be/jAcyuydmQ2A" target="_blank" rel="noopener">【元JK】床に落ちているものだけでメイクする</a>
+    <div class="small">5月27日</div>
+  </div>
 </div>
 
 <div class="video">
   <span class="video-number">16</span>
-  <a href="https://youtu.be/ZsVNokPZYmc">第二回ようかんチャレンジ</a>
-  <div class="small">5月29日</div>
+  <a href="https://youtu.be/ZsVNokPZYmc" target="_blank" rel="noopener">
+    <img class="thumbnail" src="https://img.youtube.com/vi/ZsVNokPZYmc/mqdefault.jpg" alt="第二回ようかんチャレンジ のサムネイル" loading="lazy">
+  </a>
+  <div class="video-info">
+    <a class="video-title" href="https://youtu.be/ZsVNokPZYmc" target="_blank" rel="noopener">第二回ようかんチャレンジ</a>
+    <div class="small">5月29日</div>
+  </div>
 </div>
 
 <div class="video">
   <span class="video-number">17</span>
-  <a href="https://youtu.be/qfNgF7ueGgw">【成功祈願】手相も自分でつくるもの</a>
-  <div class="small">6月1日</div>
+  <a href="https://youtu.be/qfNgF7ueGgw" target="_blank" rel="noopener">
+    <img class="thumbnail" src="https://img.youtube.com/vi/qfNgF7ueGgw/mqdefault.jpg" alt="手相も自分でつくるもの のサムネイル" loading="lazy">
+  </a>
+  <div class="video-info">
+    <a class="video-title" href="https://youtu.be/qfNgF7ueGgw" target="_blank" rel="noopener">【成功祈願】手相も自分でつくるもの</a>
+    <div class="small">6月1日</div>
+  </div>
 </div>
 
 <div class="video">
   <span class="video-number">18</span>
-  <a href="https://youtu.be/G0__FXYPcUw">自然発生するエネルギー爆発の連続</a>
-  <div class="small">6月3日</div>
+  <a href="https://youtu.be/G0__FXYPcUw" target="_blank" rel="noopener">
+    <img class="thumbnail" src="https://img.youtube.com/vi/G0__FXYPcUw/mqdefault.jpg" alt="自然発生するエネルギー爆発の連続 のサムネイル" loading="lazy">
+  </a>
+  <div class="video-info">
+    <a class="video-title" href="https://youtu.be/G0__FXYPcUw" target="_blank" rel="noopener">自然発生するエネルギー爆発の連続</a>
+    <div class="small">6月3日</div>
+  </div>
 </div>
 
 <div class="video">
   <span class="video-number">19</span>
-  <a href="https://youtu.be/hTKwKiOk-X0">本日のメイクのポイント</a>
-  <div class="small">6月5日</div>
+  <a href="https://youtu.be/hTKwKiOk-X0" target="_blank" rel="noopener">
+    <img class="thumbnail" src="https://img.youtube.com/vi/hTKwKiOk-X0/mqdefault.jpg" alt="本日のメイクのポイント のサムネイル" loading="lazy">
+  </a>
+  <div class="video-info">
+    <a class="video-title" href="https://youtu.be/hTKwKiOk-X0" target="_blank" rel="noopener">本日のメイクのポイント</a>
+    <div class="small">6月5日</div>
+  </div>
 </div>
 
 <div class="video">
   <span class="video-number">20</span>
-  <a href="https://youtu.be/dC-8fQGskAY">シュガースクラブでフルーツ飴作れるんじゃね！？</a>
-  <div class="small">6月7日</div>
+  <a href="https://youtu.be/dC-8fQGskAY" target="_blank" rel="noopener">
+    <img class="thumbnail" src="https://img.youtube.com/vi/dC-8fQGskAY/mqdefault.jpg" alt="シュガースクラブでフルーツ飴作れるんじゃね！？ のサムネイル" loading="lazy">
+  </a>
+  <div class="video-info">
+    <a class="video-title" href="https://youtu.be/dC-8fQGskAY" target="_blank" rel="noopener">シュガースクラブでフルーツ飴作れるんじゃね！？</a>
+    <div class="small">6月7日</div>
+  </div>
 </div>
 
 <div class="video">
   <span class="video-number">21</span>
-  <a href="https://youtu.be/7Z2keyfWfgE">お花を育てよう</a>
-  <div class="small">6月9日</div>
+  <a href="https://youtu.be/7Z2keyfWfgE" target="_blank" rel="noopener">
+    <img class="thumbnail" src="https://img.youtube.com/vi/7Z2keyfWfgE/mqdefault.jpg" alt="お花を育てよう のサムネイル" loading="lazy">
+  </a>
+  <div class="video-info">
+    <a class="video-title" href="https://youtu.be/7Z2keyfWfgE" target="_blank" rel="noopener">お花を育てよう</a>
+    <div class="small">6月9日</div>
+  </div>
 </div>
 
 <div class="video">
   <span class="video-number">22</span>
-  <a href="https://youtu.be/Gwj-5bD2qsw">カエルのつくり方</a>
-  <div class="small">6月15日</div>
+  <a href="https://youtu.be/Gwj-5bD2qsw" target="_blank" rel="noopener">
+    <img class="thumbnail" src="https://img.youtube.com/vi/Gwj-5bD2qsw/mqdefault.jpg" alt="カエルのつくり方 のサムネイル" loading="lazy">
+  </a>
+  <div class="video-info">
+    <a class="video-title" href="https://youtu.be/Gwj-5bD2qsw" target="_blank" rel="noopener">カエルのつくり方</a>
+    <div class="small">6月15日</div>
+  </div>
 </div>
 
 <div class="video">
   <span class="video-number">23</span>
-  <a href="https://youtu.be/0rs931WGGko">【ピンチはチャンス】舌ピ1日目女が早口言葉に挑戦</a>
-  <div class="small">6月17日</div>
+  <a href="https://youtu.be/0rs931WGGko" target="_blank" rel="noopener">
+    <img class="thumbnail" src="https://img.youtube.com/vi/0rs931WGGko/mqdefault.jpg" alt="舌ピ1日目女が早口言葉に挑戦 のサムネイル" loading="lazy">
+  </a>
+  <div class="video-info">
+    <a class="video-title" href="https://youtu.be/0rs931WGGko" target="_blank" rel="noopener">【ピンチはチャンス】舌ピ1日目女が早口言葉に挑戦</a>
+    <div class="small">6月17日</div>
+  </div>
 </div>
 
 <div class="video">
   <span class="video-number">24</span>
-  <a href="https://youtu.be/Hf388Pd4JJU">芋みたいなカラス</a>
-  <div class="small">6月19日</div>
+  <a href="https://youtu.be/Hf388Pd4JJU" target="_blank" rel="noopener">
+    <img class="thumbnail" src="https://img.youtube.com/vi/Hf388Pd4JJU/mqdefault.jpg" alt="芋みたいなカラス のサムネイル" loading="lazy">
+  </a>
+  <div class="video-info">
+    <a class="video-title" href="https://youtu.be/Hf388Pd4JJU" target="_blank" rel="noopener">芋みたいなカラス</a>
+    <div class="small">6月19日</div>
+  </div>
 </div>
 
 <div class="video">
   <span class="video-number">25</span>
-  <a href="https://youtu.be/Oa92VTKw_10">最近または過去の日々</a>
-  <div class="small">6月21日</div>
+  <a href="https://youtu.be/Oa92VTKw_10" target="_blank" rel="noopener">
+    <img class="thumbnail" src="https://img.youtube.com/vi/Oa92VTKw_10/mqdefault.jpg" alt="最近または過去の日々 のサムネイル" loading="lazy">
+  </a>
+  <div class="video-info">
+    <a class="video-title" href="https://youtu.be/Oa92VTKw_10" target="_blank" rel="noopener">最近または過去の日々</a>
+    <div class="small">6月21日</div>
+  </div>
 </div>
 
 <div class="video">
   <span class="video-number">26</span>
-  <a href="https://youtu.be/jdhaO5heSQg">ひとりモッツァレラチーズゲーム</a>
-  <div class="small">6月23日</div>
+  <a href="https://youtu.be/jdhaO5heSQg" target="_blank" rel="noopener">
+    <img class="thumbnail" src="https://img.youtube.com/vi/jdhaO5heSQg/mqdefault.jpg" alt="ひとりモッツァレラチーズゲーム のサムネイル" loading="lazy">
+  </a>
+  <div class="video-info">
+    <a class="video-title" href="https://youtu.be/jdhaO5heSQg" target="_blank" rel="noopener">ひとりモッツァレラチーズゲーム</a>
+    <div class="small">6月23日</div>
+  </div>
 </div>
 
 <div class="video">
   <span class="video-number">27</span>
-  <a href="https://youtu.be/_t50yDNiiUA">【再音辞春鬼】激辛に挑戦してみた</a>
-  <div class="small">6月27日</div>
+  <a href="https://youtu.be/_t50yDNiiUA" target="_blank" rel="noopener">
+    <img class="thumbnail" src="https://img.youtube.com/vi/_t50yDNiiUA/mqdefault.jpg" alt="激辛に挑戦してみた のサムネイル" loading="lazy">
+  </a>
+  <div class="video-info">
+    <a class="video-title" href="https://youtu.be/_t50yDNiiUA" target="_blank" rel="noopener">【再音辞春鬼】激辛に挑戦してみた</a>
+    <div class="small">6月27日</div>
+  </div>
 </div>
 
 <div class="video">
   <span class="video-number">28</span>
-  <a href="https://youtu.be/jwOo6ypQf2E">三つあみ</a>
-  <div class="small">7月3日</div>
+  <a href="https://youtu.be/jwOo6ypQf2E" target="_blank" rel="noopener">
+    <img class="thumbnail" src="https://img.youtube.com/vi/jwOo6ypQf2E/mqdefault.jpg" alt="三つあみ のサムネイル" loading="lazy">
+  </a>
+  <div class="video-info">
+    <a class="video-title" href="https://youtu.be/jwOo6ypQf2E" target="_blank" rel="noopener">三つあみ</a>
+    <div class="small">7月3日</div>
+  </div>
 </div>
 
 <div class="video">
   <span class="video-number">29</span>
-  <a href="https://youtu.be/QI2fB0qny7c">山椒かけすぎてみた</a>
-  <div class="small">7月11日</div>
+  <a href="https://youtu.be/QI2fB0qny7c" target="_blank" rel="noopener">
+    <img class="thumbnail" src="https://img.youtube.com/vi/QI2fB0qny7c/mqdefault.jpg" alt="山椒かけすぎてみた のサムネイル" loading="lazy">
+  </a>
+  <div class="video-info">
+    <a class="video-title" href="https://youtu.be/QI2fB0qny7c" target="_blank" rel="noopener">山椒かけすぎてみた</a>
+    <div class="small">7月11日</div>
+  </div>
 </div>
 
 <div class="video">
   <span class="video-number">30</span>
-  <a href="https://youtu.be/PvxGewGKotc">第三回ようかんチャレンジ</a>
-  <div class="small">8月15日</div>
+  <a href="https://youtu.be/PvxGewGKotc" target="_blank" rel="noopener">
+    <img class="thumbnail" src="https://img.youtube.com/vi/PvxGewGKotc/mqdefault.jpg" alt="第三回ようかんチャレンジ のサムネイル" loading="lazy">
+  </a>
+  <div class="video-info">
+    <a class="video-title" href="https://youtu.be/PvxGewGKotc" target="_blank" rel="noopener">第三回ようかんチャレンジ</a>
+    <div class="small">8月15日</div>
+  </div>
 </div>
 
 <div class="video">
   <span class="video-number">31</span>
-  <a href="https://youtu.be/-RLNLC6ShJ0">夏だからね</a>
-  <div class="small">8月19日</div>
+  <a href="https://youtu.be/-RLNLC6ShJ0" target="_blank" rel="noopener">
+    <img class="thumbnail" src="https://img.youtube.com/vi/-RLNLC6ShJ0/mqdefault.jpg" alt="夏だからね のサムネイル" loading="lazy">
+  </a>
+  <div class="video-info">
+    <a class="video-title" href="https://youtu.be/-RLNLC6ShJ0" target="_blank" rel="noopener">夏だからね</a>
+    <div class="small">8月19日</div>
+  </div>
 </div>
 
 <div class="video">
   <span class="video-number">32</span>
-  <a href="https://youtu.be/zY2h3h58ygc">緘の！3iss UTube ラジオ#1「初ライブ編」</a>
-  <div class="small">9月28日</div>
+  <a href="https://youtu.be/zY2h3h58ygc" target="_blank" rel="noopener">
+    <img class="thumbnail" src="https://img.youtube.com/vi/zY2h3h58ygc/mqdefault.jpg" alt="緘の！3iss UTube ラジオ#1 初ライブ編 のサムネイル" loading="lazy">
+  </a>
+  <div class="video-info">
+    <a class="video-title" href="https://youtu.be/zY2h3h58ygc" target="_blank" rel="noopener">緘の！3iss UTube ラジオ#1「初ライブ編」</a>
+    <div class="small">9月28日</div>
+  </div>
 </div>
 
 <div class="video">
   <span class="video-number">33</span>
-  <a href="https://youtu.be/uJFlfUlWZtA">【検証】ヌーブラに支えられないものはない！？</a>
-  <div class="small">10月7日</div>
+  <a href="https://youtu.be/uJFlfUlWZtA" target="_blank" rel="noopener">
+    <img class="thumbnail" src="https://img.youtube.com/vi/uJFlfUlWZtA/mqdefault.jpg" alt="ヌーブラに支えられないものはない！？ のサムネイル" loading="lazy">
+  </a>
+  <div class="video-info">
+    <a class="video-title" href="https://youtu.be/uJFlfUlWZtA" target="_blank" rel="noopener">【検証】ヌーブラに支えられないものはない！？</a>
+    <div class="small">10月7日</div>
+  </div>
 </div>
 
 <div class="video">
   <span class="video-number">34</span>
-  <a href="https://youtu.be/nqGnZdvmvtg">【今すぐなれる人気者！？】インスタント マジシャンズ</a>
-  <div class="small">10月9日</div>
+  <a href="https://youtu.be/nqGnZdvmvtg" target="_blank" rel="noopener">
+    <img class="thumbnail" src="https://img.youtube.com/vi/nqGnZdvmvtg/mqdefault.jpg" alt="インスタント マジシャンズ のサムネイル" loading="lazy">
+  </a>
+  <div class="video-info">
+    <a class="video-title" href="https://youtu.be/nqGnZdvmvtg" target="_blank" rel="noopener">【今すぐなれる人気者！？】インスタント マジシャンズ</a>
+    <div class="small">10月9日</div>
+  </div>
 </div>
 
 <div class="video">
   <span class="video-number">35</span>
-  <a href="https://youtu.be/64NZ7uTx0_o">【金欠必見】0円ヒアルロン酸</a>
-  <div class="small">10月11日</div>
+  <a href="https://youtu.be/64NZ7uTx0_o" target="_blank" rel="noopener">
+    <img class="thumbnail" src="https://img.youtube.com/vi/64NZ7uTx0_o/mqdefault.jpg" alt="0円ヒアルロン酸 のサムネイル" loading="lazy">
+  </a>
+  <div class="video-info">
+    <a class="video-title" href="https://youtu.be/64NZ7uTx0_o" target="_blank" rel="noopener">【金欠必見】0円ヒアルロン酸</a>
+    <div class="small">10月11日</div>
+  </div>
 </div>
 
 <div class="video">
   <span class="video-number">36</span>
-  <a href="https://youtu.be/uxWHb59VdgA">【たのしい】家でボーリングやってみた</a>
-  <div class="small">10月13日</div>
+  <a href="https://youtu.be/uxWHb59VdgA" target="_blank" rel="noopener">
+    <img class="thumbnail" src="https://img.youtube.com/vi/uxWHb59VdgA/mqdefault.jpg" alt="家でボーリングやってみた のサムネイル" loading="lazy">
+  </a>
+  <div class="video-info">
+    <a class="video-title" href="https://youtu.be/uxWHb59VdgA" target="_blank" rel="noopener">【たのしい】家でボーリングやってみた</a>
+    <div class="small">10月13日</div>
+  </div>
 </div>
 
 <div class="video">
   <span class="video-number">37</span>
-  <a href="https://youtu.be/xcIQGIpheq0">期末テストで暖をとる</a>
-  <div class="small">10月15日</div>
+  <a href="https://youtu.be/xcIQGIpheq0" target="_blank" rel="noopener">
+    <img class="thumbnail" src="https://img.youtube.com/vi/xcIQGIpheq0/mqdefault.jpg" alt="期末テストで暖をとる のサムネイル" loading="lazy">
+  </a>
+  <div class="video-info">
+    <a class="video-title" href="https://youtu.be/xcIQGIpheq0" target="_blank" rel="noopener">期末テストで暖をとる</a>
+    <div class="small">10月15日</div>
+  </div>
 </div>
 
 <div class="video">
   <span class="video-number">38</span>
-  <a href="https://youtu.be/pUfP53a7v3U">第四回ようかんチャレンジ（ドーナツ）</a>
-  <div class="small">10月19日</div>
+  <a href="https://youtu.be/pUfP53a7v3U" target="_blank" rel="noopener">
+    <img class="thumbnail" src="https://img.youtube.com/vi/pUfP53a7v3U/mqdefault.jpg" alt="第四回ようかんチャレンジ（ドーナツ） のサムネイル" loading="lazy">
+  </a>
+  <div class="video-info">
+    <a class="video-title" href="https://youtu.be/pUfP53a7v3U" target="_blank" rel="noopener">第四回ようかんチャレンジ（ドーナツ）</a>
+    <div class="small">10月19日</div>
+  </div>
 </div>
 
 </div>
