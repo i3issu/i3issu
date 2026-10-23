@@ -16,13 +16,9 @@ body {
   line-height: 1.7;
 }
 
-a {
-  color: #fff;
-}
+a { color: #fff; }
 
-h1 {
-  font-size: 2em;
-}
+h1 { font-size: 2em; }
 
 .box {
   border: 1px solid #fff;
@@ -31,18 +27,71 @@ h1 {
 }
 
 .video {
-  padding: 18px 0;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 0;
   border-bottom: 1px dotted #777;
-}
-
-.small {
-  color: #aaa;
 }
 
 .video-number {
   color: #42d66b;
   font-weight: bold;
-  margin-right: 12px;
+  min-width: 24px;
+}
+
+.thumbnail {
+  display: block;
+  width: 120px;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  flex-shrink: 0;
+  border: 1px solid #555;
+}
+
+.video-info {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.video-title {
+  text-decoration: none;
+}
+
+.video-title:hover {
+  color: #42d66b;
+}
+
+.small {
+  color: #aaa;
+  font-size: 0.85em;
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 20px 12px;
+  }
+
+  .box {
+    padding: 12px;
+  }
+
+  .video {
+    gap: 8px;
+  }
+
+  .video-number {
+    min-width: 20px;
+  }
+
+  .thumbnail {
+    width: 95px;
+  }
+
+  .video-info {
+    font-size: 0.9em;
+  }
 }
 </style>
 </head>
@@ -50,48 +99,69 @@ h1 {
 <body>
 
 <p>i 3iss u</p>
-
 <p>YouTube / 緘</p>
 
 <p class="small">
-<a href="index.html">TOP</a> / 
+<a href="index.html">TOP</a> /
 <a href="youtube.html">YouTube</a> / 2025
 </p>
 
 <h1>2025</h1>
-
 
 <div class="box">
 <h2>VIDEOS</h2>
 
 <div class="video">
   <span class="video-number">01</span>
-  <a href="https://youtu.be/r3QDsPavJyc">
-    2025.6.11.pm4:44 ストロベリームーンだったはずの空
+  <a href="https://youtu.be/r3QDsPavJyc" target="_blank" rel="noopener">
+    <img class="thumbnail"
+         src="https://img.youtube.com/vi/r3QDsPavJyc/mqdefault.jpg"
+         alt="ストロベリームーンだったはずの空のサムネイル"
+         loading="lazy">
   </a>
-  <div class="small">6月11日</div>
+  <div class="video-info">
+    <a class="video-title"
+       href="https://youtu.be/r3QDsPavJyc"
+       target="_blank" rel="noopener">2025.6.11.pm4:44 ストロベリームーンだったはずの空</a>
+    <div class="small">6月11日</div>
+  </div>
 </div>
 
 <div class="video">
   <span class="video-number">02</span>
-  <a href="https://youtu.be/3H03b439mr4">
-    空
+  <a href="https://youtu.be/3H03b439mr4" target="_blank" rel="noopener">
+    <img class="thumbnail"
+         src="https://img.youtube.com/vi/3H03b439mr4/mqdefault.jpg"
+         alt="空のサムネイル"
+         loading="lazy">
   </a>
-  <div class="small">9月9日</div>
+  <div class="video-info">
+    <a class="video-title"
+       href="https://youtu.be/3H03b439mr4"
+       target="_blank" rel="noopener">空</a>
+    <div class="small">9月9日</div>
+  </div>
 </div>
 
 <div class="video">
   <span class="video-number">03</span>
-  <a href="https://youtu.be/ExEDohB7Xac">
-    書き終め2025
+  <a href="https://youtu.be/ExEDohB7Xac" target="_blank" rel="noopener">
+    <img class="thumbnail"
+         src="https://img.youtube.com/vi/ExEDohB7Xac/mqdefault.jpg"
+         alt="書き終め2025のサムネイル"
+         loading="lazy">
   </a>
-  <div class="small">12月25日</div>
+  <div class="video-info">
+    <a class="video-title"
+       href="https://youtu.be/ExEDohB7Xac"
+       target="_blank" rel="noopener">書き終め2025</a>
+    <div class="small">12月25日</div>
+  </div>
 </div>
 
 </div>
-<p>
-<a href="youtube.html">← YouTubeへ戻る</a>
-</p>
+
+<p><a href="youtube.html">← YouTubeへ戻る</a></p>
 
 </body>
 </html>
