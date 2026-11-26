@@ -233,6 +233,8 @@ nav a:nth-child(8) { color: #55c7e8; }
     </p>
 </div>
 
+<div id="visitor-count"></div>
+
 <footer>
     © 2026 i 3iss u
     <br><br>
@@ -244,7 +246,32 @@ nav a:nth-child(8) { color: #55c7e8; }
 <!-- GoatCounter -->
 <script data-goatcounter="https://i3issi.goatcounter.com/count"
         async src="//gc.zgo.at/count.js"></script>
-</body>
+
+<!-- Visitor Count -->
+<script>
+var t = setInterval(function() {
+    if (window.goatcounter && window.goatcounter.visit_count) {
+        clearInterval(t);
+        window.goatcounter.visit_count({
+            append: '#visitor-count',
+            path: 'TOTAL',
+            style: `
+                div {
+                    background: #000;
+                    color: #fff;
+                    border: 1px solid #555;
+                    padding: 12px;
+                    font-family: monospace;
+                }
+                #gcvc-views {
+                    color: #42d66b;
+                    font-weight: bold;
+                }
+            `
+        });
+    }
+}, 100);
+</script>
 
 </body>
 </html>
